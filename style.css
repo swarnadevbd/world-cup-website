@@ -24,6 +24,7 @@ body {
 .main-title {
     font-size: 70px;
     font-weight: bold;
+    line-height: 80px;
 }
 
 .first-para {
