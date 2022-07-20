@@ -12,6 +12,7 @@ body {
     border-radius: 30PX;
     color: white;
     display: flex;
+    margin-top: 50px;
 
 }
 
@@ -42,6 +43,7 @@ body {
 .right-section img {
     width: 100%;
     height: 550px;
+    padding-top: 70px;
 }
 
 
