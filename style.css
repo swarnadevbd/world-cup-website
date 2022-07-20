@@ -1,0 +1,288 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.banner-box {
+    background-color: black;
+    border-radius: 30PX;
+    color: white;
+    display: flex;
+
+}
+
+.left-section {
+    width: 50%;
+    padding: 0px 0px 50px 50px;
+}
+
+.main-title {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.first-para {
+    font-size: 18px;
+}
+
+.watch-button {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-family: 'Poppins', sans-serif;
+    ;
+}
+
+.right-section img {
+    width: 100%;
+    height: 550px;
+}
+
+
+.second-section {
+
+    display: flex;
+    margin: 100px 0;
+}
+
+.sidebar {
+    width: 50%;
+
+}
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    margin: 15px 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sidebar-menu a {
+    background: white;
+    color: #161616;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sidebar-menu .active {
+    background-color: red;
+    color: white;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.single-card {
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.card-img img {
+    width: 100%;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.transfer-btn {
+    border: 1px solid rgb(80, 80, 80);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.icons {
+    display: flex;
+    color: #4f4f4f;
+}
+
+.second-icon {
+    margin-left: 25px;
+}
+
+.fas {
+    font-weight: 400px;
+}
+
+footer {
+    background-color: #161616;
+    text-align: center;
+    padding: 50px;
+}
+
+footer h1 {
+    color: white;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer a {
+    color: #b9b9b9;
+    text-decoration: none;
+}
+
+.social-media i {
+    font-size: 30px;
+    margin: 15px;
+}
+
+/*for second website*/
+.upcoming-match-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+
+.upcoming-match-single-card {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid rgb(82 82 82 / 10%);
+    border-radius: 5px;
+}
+
+
+
+.match-content {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    .banner-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section {
+        padding: 0px;
+        width: 100%;
+    }
+
+    .main-title {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .first-para {
+        font-size: 16px;
+    }
+
+    .watch-button {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    .right-section img {
+        width: 100%;
+    }
+
+    .cards {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .second-section {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+
+    /*for second website*/
+    .upcoming-match-cards {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 1024px) {
+
+    .main-title {
+        font-size: 35px;
+    }
+
+    .first-para {
+        font-size: 16px;
+    }
+
+    .right-section img {
+        width: 100%;
+        height: 80%;
+        padding-top: 50px;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .second-section {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar-menu {
+        background-color: transparent;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    .sidebar-menu a {
+        border: 1px solid rgb(165, 165, 165);
+        width: 150px;
+        padding: 10px;
+    }
+
+    .cards {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*for second website*/
+    .upcoming-match-cards {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
